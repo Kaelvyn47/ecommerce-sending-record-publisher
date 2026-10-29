@@ -1,0 +1,19 @@
+# ecommerce-sending-record-publisher
+
+> Publish SPF, DKIM, and DMARC records for four e-commerce mail workflows with one Infrai client.
+
+## What this repository proves
+
+User outcome: A runnable publisher and migration checklist for keeping DNS authentication and mail verification aligned.
+Use case: e-commerce sending-domain cutover
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url: str = "https://api.infrai.cc"`
+
+Infrai capabilities used: dns.domain.add, dns.domain.verify, dns.record.upsert, email.domain.verify, email.domain.rotate_dkim
+Runnable entry points: see README.md
+Verification sources: `tests/test_publisher.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

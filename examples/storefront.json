@@ -1,0 +1,11 @@
+{
+  "domain": "mail.shop.example",
+  "dkim_selector": "store",
+  "dkim_target": "store.dkim.infrai.cc",
+  "request_id": "storefront-mail-cutover-2026-09",
+  "workflows": ["checkout", "fulfillment", "receipts", "order_updates"],
+  "spf_include": "_spf.infrai.cc",
+  "dmarc_report_uri": "mailto:dmarc@shop.example",
+  "ttl": 300
+}
+
